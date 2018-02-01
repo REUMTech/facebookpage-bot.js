@@ -1,0 +1,41 @@
+{
+  "name": "FacebookPageBot.js",
+  "version": "IN DEVELOPMENT",
+  "description": "FacebookPage Bot made with love and nodejs",
+  "main": "bot.js",
+  "scripts": {
+    "start": "node bot.js",
+    "start-forever": "forever -o ./logs/debug.log -e ./logs/errors.log start bot.js",
+    "start-pm2": "pm2 -o ./logs/debug.log -e ./logs/errors.log start bot.js",
+    "start-pm2-nolog": "pm2 -o /dev/null -e ./logs/errors.log start bot.js ",
+    "stop": "killall node",
+    "stop-forever": "forever stop bot.js",
+    "stop-pm2": "pm2 stop bot.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/social-manager-tools/facebookpage-bot.js.git"
+  },
+  "keywords": [
+    "bot",
+    "ptkdev",
+    "facebookpage",
+    "facebookpage-bot",
+    "selenium",
+    "webdriverio"
+  ],
+  "author": "Patryk Rzucidlo [@ptkdev] <support@ptkdev.io> (https://ptkdev.it)",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/social-manager-tools/facebookpage-bot.js/issues"
+  },
+  "homepage": "https://facebookpage-bot.js.ptkdev.io",
+  "dependencies": {
+    "path": "^0.12.7",
+    "system-sleep": "^1.3.6",
+    "puppeteer": "^1.0.0"
+  },
+  "engines": {
+    "node": ">=7.6.0"
+  }
+}
